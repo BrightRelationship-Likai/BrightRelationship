@@ -1,4 +1,4 @@
-openstack url git://github.com/openstack-dev/devstack
+openstack url https://github.com/openstack-dev/devstack
 
 persion___vm
        \__topo
