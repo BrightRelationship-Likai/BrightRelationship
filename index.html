@@ -1,46 +1,385 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<meta http-equiv="Content-Script-Type" content="text/javascript">
-<script type="text/javascript">
-function getCookie(c_name) { // Local function for getting a cookie value
-    if (document.cookie.length > 0) {
-        c_start = document.cookie.indexOf(c_name + "=");
-        if (c_start!=-1) {
-        c_start=c_start + c_name.length + 1;
-        c_end=document.cookie.indexOf(";", c_start);
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+    <title>Barefoot</title>
+    
+    
 
-        if (c_end==-1) 
-            c_end = document.cookie.length;
+    
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Barefoot Networks" />
+    <meta property="og:url" content="https://barefootnetworks.com/" />
+    <meta property="og:description" content="Catch the next wave in networking" />
+    <meta property="og:site_name" content="Barefoot Networks" />
+    
+    <meta property="og:image" content="https://barefootnetworks.com/media/og_images/barefoot-footprints.jpg" />
+    
 
-        return unescape(document.cookie.substring(c_start,c_end));
-        }
-    }
-    return "";
-}
-function setCookie(c_name, value, expiredays) { // Local function for setting a value of a cookie
-    var exdate = new Date();
-    exdate.setDate(exdate.getDate()+expiredays);
-    document.cookie = c_name + "=" + escape(value) + ((expiredays==null) ? "" : ";expires=" + exdate.toGMTString()) + ";path=/";
-}
-function getHostUri() {
-    var loc = document.location;
-    return loc.toString();
-}
-setCookie('YPF8827340282Jdskjhfiw_928937459182JAX666', '113.45.42.252', 10);
-try {  
-    location.reload(true);  
-} catch (err1) {  
-    try {  
-        location.reload();  
-    } catch (err2) {  
-    	location.href = getHostUri();  
-    }  
-}
-</script>
+
+    
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    
+    <meta name="twitter:title" content="Barefoot Networks">
+    
+    
+    <meta name="twitter:site" content="@izzedizzed">
+    
+    
+    <meta name="twitter:creator" content="@izzedizzed">
+    
+    
+    <meta name="twitter:description" content="Catch the next wave in networking">
+    
+    
+    <meta name="twitter:image" content="https://barefootnetworks.com/media/twittercard_images/barefoot-footprints.jpg">
+    
+
+
+    <link rel="shortcut icon" href="https://dqgqp62hbvenl.cloudfront.net/static/app/img/favicon.ico" />
+
+    <!-- Default Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300' rel='stylesheet' type='text/css'>
+
+
+    <link rel="stylesheet" href="https://dqgqp62hbvenl.cloudfront.net/static/CACHE/css/d1bba44afbf6.css" type="text/css" />
+
+    
+
 </head>
 <body>
-<noscript>This site requires JavaScript and Cookies to be enabled. Please change your browser settings or upgrade your browser.</noscript>
+    
+    
+<nav class="navbar navbar-fixed-top top-nav top-nav-hidden" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+                <img src="https://dqgqp62hbvenl.cloudfront.net/static/app/img/logo.png" class="visible-lg" alt="Barefoot">
+                <img src="https://dqgqp62hbvenl.cloudfront.net/static/app/img/logo-inverted.png" class="visible-xs visible-sm visible-md" alt="Barefoot">
+            </a>
+        </div>
+        <div id="menu" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active">
+                    <a href="/">Home</a>
+                </li>
+                <li >
+                    <a href="/technology/">Technology</a>
+                </li>
+                <li >
+                    <a href="/news/">News</a>
+                </li>
+                <li >
+                    <a href="/investors/">Investors</a>
+                </li>
+                <li >
+                    <a href="/blog/">Blog</a>
+                </li>
+                <li >
+                    <a href="/company/">Company</a>
+                </li>
+                <li >
+                    <a href="/careers/">Careers</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+    <div id="fp-nav-wrapper" class="container">
+        <div id="fp-nav-outer">
+            <div class="fp-nav">
+                <ul>
+                    <li data-menuanchor="home">
+                        <a href=""></a>
+                    </li>
+                    <li data-menuanchor="intro">
+                        <a href="#intro"></a>
+                    </li>
+                    <li data-menuanchor="vision">
+                        <a href="#vision"></a>
+                    </li>
+                    <li data-menuanchor="technology">
+                        <a href="#technology"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="fullpage-home">
+        <header id="section0" class="section" data-anchor="home">
+            <video id="promoMovie" preload="auto" poster="https://dqgqp62hbvenl.cloudfront.net/static/app/img/ocean.jpg" loop>
+                <source src="https://dqgqp62hbvenl.cloudfront.net/static/app/video/ocean.webm" type="video/webm">
+                <source src="https://dqgqp62hbvenl.cloudfront.net/static/app/video/ocean.mp4" type="video/mp4">
+            </video>
+            <div class="logo"><img src="https://dqgqp62hbvenl.cloudfront.net/static/app/img/full-logo.png" class="img-responsive" alt="Barefoot Networks"></div>
+            <div class="scroll-btn text-center">
+                <p>Take a Scroll</p>
+                <img src="https://dqgqp62hbvenl.cloudfront.net/static/app/img/scroll.png" class="scroll-icon" alt="Scroll">
+            </div>
+        </header>
+         <section id="section1" class="section fullscreen-bg" data-anchor="intro" style="background-image: url('https://dqgqp62hbvenl.cloudfront.net/static/app/img/home/header.jpg')">
+            <div class="container">
+                <div class="intro-text text-center">
+                    <h4>Software is eating the network</h4>
+                    <h1>Catch the next wave in networking</h1>
+                    <div class="actions">
+                        <div class="row stackable">
+                            <div class="col-md-3 col-md-offset-2">
+                                <div class="media">
+                                    <a id="vid-intro" href="https://vimeo.com/169931304" class="popup-video">
+                                        <div class="media-left">
+                                            <i class="icon-circle icon-mid-blue fa fa-play"></i>
+                                        </div>
+                                        <div class="media-body media-middle">
+                                            <h4 class="media-sub-heading">Watch video <br/></h4>
+                                            <h3 class="media-heading">Barefoot Networks<sup>&trade;</sup></h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="media">
+                                    <a href="/white-paper/the-worlds-fastest-most-programmable-networks/">
+                                        <div class="media-left">
+                                            <i class="icon-circle icon-yellow fa fa-file-pdf-o"></i>
+                                        </div>
+                                        <div class="media-body media-middle">
+                                            <h4 class="media-sub-heading">Read Paper</h4>
+                                            <h3 class="media-heading">Programmable. Switching. FAST.</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="media">
+                                    <a id="vid-p4" href="https://vimeo.com/170292451" class="popup-video">
+                                        <div class="media-left">
+                                            <i class="icon-circle icon-green fa fa-play"></i>
+                                        </div>
+                                        <div class="media-body media-middle">
+                                            <h4 class="media-sub-heading">Watch video</h4>
+                                            <h3 class="media-heading">P4 &amp; PISA<sup>&trade;</sup></h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section2" class="section fullscreen-bg" data-anchor="vision" style="background-image: url(https://dqgqp62hbvenl.cloudfront.net/static/app/img/home/slides/slide-1.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-md-offset-1">
+                        <div class="section-content">
+                            <h1>Vision</h1>
+                            <p>At Barefoot, we believe that the network should be blazing fast and fully programmable. We envision a world where programmable networks outperform fixed-function networks. We believe that programming the network should be as easy to program as a server. And we have invented technology to achieve all of these goals.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+        </section>
+        <section id="section3" class="section fullscreen-bg" data-anchor="technology" style="background-image: url(https://dqgqp62hbvenl.cloudfront.net/static/app/img/home/slides/slide-3.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-1">
+                        <div class="section-content">
+                            <h1>Technology</h1>
+                            <p>Barefoot Networks’ technology provides the necessary hardware and software for building the world's fastest and most programmable networks while leveraging the power of the open and thriving community around P4.</p>
+                            <ul class="list-unstyled list-links">
+                                <li class="full-width">
+                                    <a href="/technology/#tofino" class="hidden-xs">
+                                        <i class="bullet-blue"></i>
+                                        <span class="underline">Barefoot Tofino<sup>&trade;</sup></span> - Series of high-performance programmable switches
+                                    </a>
+                                    <a href="/technology/#section4" class="hidden-sm hidden-md hidden-lg">
+                                        <i class="bullet-blue"></i>
+                                        <span class="underline">Barefoot Tofino<sup>&trade;</sup></span> - Series of high-performance programmable switches
+                                    </a>
+                                </li>
+                                <li class="full-width">
+                                    <a href="/technology/#capilano" class="hidden-xs">
+                                        <i class="bullet-blue"></i>
+                                        <span class="underline">Barefoot Capilano<sup>&trade;</sup></span> - Complete software suite for developing P4 data planes for Tofino
+                                    </a>
+                                    <a href="/technology/#section5" class="hidden-sm hidden-md hidden-lg">
+                                        <i class="bullet-blue"></i>
+                                        <span class="underline">Barefoot Capilano<sup>&trade;</sup></span> - Complete software suite for developing P4 data planes for Tofino
+                                    </a>
+                                </li>
+                                <li class="full-width">
+                                    <a href="/technology/#p4" class="hidden-xs">
+                                        <i class="bullet-blue"></i>
+                                        <span class="underline">Barefoot and the P4.org community</span> - Contributions to the rich ecosystem of P4 applications and tools.
+                                    </a>
+                                    <a href="/technology/#section6" class="hidden-sm hidden-md hidden-lg">
+                                        <i class="bullet-blue"></i>
+                                        <span class="underline">Barefoot and the P4.org community</span> - Contributions to the rich ecosystem of P4 applications and tools.
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+        
+    </div>
+
+
+
+    
+        <footer>
+    <nav class="navbar" role="navigation">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-5">
+                    <ul class="nav navbar-nav navbar-left list-inline">
+                        
+                        <li>&copy; 2016 - 2017 Barefoot Networks, Inc. <span class="tab-break">All Rights Reserved</span><br>
+                            <a class="page-links" href="/privacy/">Privacy Policy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a class="page-links" href="/terms-of-use/">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <ul class="nav navbar-nav list-inline social">
+                        <li><a href="https://twitter.com/barefootnetwork" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/barefoot-networks" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.facebook.com/barefootnetworks" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="http://www.youtube.com/c/BarefootNetworksPaloAlto" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <ul class="nav navbar-nav navbar-right list-inline credit">
+                        <li style="font-size:1.3rem;">Site by <a href="http://unomena.com" target="_blank">Unomena</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</footer>
+
+    
+
+    <script type="text/javascript" src="https://dqgqp62hbvenl.cloudfront.net/static/CACHE/js/327be83331e4.js"></script>
+  
+    <script src="https://dqgqp62hbvenl.cloudfront.net/static/app/js/map-toggle.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            // Pretty Vimeo links
+            $('#vid-intro').hover(function() {
+                $(this).attr("href", "https://vimeo.com/barefootnetworks/introduction");
+            });
+
+            $('#vid-intro').click(function(event) {
+                $(this).attr("href", "https://vimeo.com/169931304");
+            });
+
+            $('#vid-p4').hover(function() {
+                $(this).attr("href", "https://vimeo.com/barefootnetworks/p4pisa");
+            });
+
+            $('#vid-p4').click(function(event) {
+                $(this).attr("href", "https://vimeo.com/170292451");
+            });
+
+            function isMobile () {
+                var isMobile = window.matchMedia("only screen and (max-width: 700px)");
+
+                if (!isMobile.matches) {
+                    // prevent user from creating multiple instances of fullPage
+                    var fullPageCreated = false;
+
+                    if(fullPageCreated === false) {
+                        fullPageCreated = true;
+
+                        $('#fullpage-home').fullpage({
+                            verticalCentered: true,
+                            anchors: ['home','intro', 'vision', 'technology'],
+                            menu: '.fp-nav ul',
+                            css3: true,
+                            scrollingSpeed: 1000,
+                            afterLoad: function(anchorLink, index, slideAnchor, slideIndex){
+                                var loadedSlide = $(this);
+
+                                if (index == 1) {
+                                    if ($("video").get(0).paused && $(window).width() > 700) {
+                                        $("video").get(0).play();
+                                    }
+                                }
+
+                            },
+                            onLeave: function(index, nextIndex, direction){
+                                //leaving 1st section
+                                if(index == 1){
+                                    $('.top-nav,.fp-nav,footer').show();
+
+                                }
+                                //back to the 1st section
+                                if(nextIndex == 1){
+                                    $('.top-nav,.fp-nav,footer').hide();
+                                }
+
+                            }
+                        });
+                    }
+                }
+            }
+
+            isMobile();
+
+
+            $('.popup-video').magnificPopup({
+                disableOn: 700,
+                type: 'iframe',
+                mainClass: 'mfp-fade',
+                removalDelay: 160,
+                preloader: false,
+                fixedContentPos: false
+            });
+        });
+
+        // Listen for video ready state
+        window.addEventListener('load', function() {
+            var video = document.getElementById('promoMovie');
+
+            function checkLoad() {
+                if ($(window).width() > 700) {
+                    if (video.readyState === 4) {
+                            $(video).get(0).play();
+                    } else {
+                        setTimeout(checkLoad, 100);
+                    }
+                }else {
+                    $(video).get(0).pause();
+                }
+            }
+
+            checkLoad();
+        }, false);
+
+    </script>
+
 </body>
 </html>
