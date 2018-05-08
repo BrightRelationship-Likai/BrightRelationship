@@ -4,10 +4,9 @@ from SimpleXMLRPCServer import SimpleXMLRPCServer
 import os   
 def chpassword(x):
     os.system("echo \"changing password\"")
-    os.system("service mysqld stop")
     os.system("source /root/iniset.sh && iniset -sudo /etc/my.cnf mysqld skip-grant-tables True")
-    os.system("service mysqld start")
-    os.system("mysql -uroot -e \"use mysql;update user set password=password(%s) where user=\"root\";flush privileges;\"" % (x))
+    os.system("service mysqld restart")
+    os.system("mysql -uroot -e \"use mysql;update user set password=password(%s) where user='root';flush privileges;\"" % (x))
     os.system("source /root/iniset.sh && iniset -sudo /etc/my.cnf mysqld skip-grant-tables False")
     os.system("service mysqld restart")
     return x
