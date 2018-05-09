@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -- coding: utf-8 --
+#5.7 password change to authentication_string
 from SimpleXMLRPCServer import SimpleXMLRPCServer
 import os   
 def chpassword(x):
