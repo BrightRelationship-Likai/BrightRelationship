@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import sys
 from xmlrpclib import ServerProxy
 if __name__ == '__main__':
