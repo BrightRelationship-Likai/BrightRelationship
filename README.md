@@ -1,4 +1,4 @@
-# relationship-as-a-whole
+# BrightRelationship
 to describe the world and then coorperate more efficiently
 
 as this project will be not get profit support for a period of time,so i don't have enough time to contribute,(hoping it will make the world better)i opened it to the public.
